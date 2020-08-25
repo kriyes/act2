@@ -19,8 +19,7 @@ ALLOWED_HOSTS = ['actorsvilla.com']
 
 INSTALLED_APPS = [
     'account',
-
-  #  'Pillow',
+    'Pillow',
     'phone_field',
     'django.contrib.admin',
     'django.contrib.auth',
