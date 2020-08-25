@@ -1,0 +1,77 @@
+model
+talent :
+name ,city ,state , Type ,age,joining date,
+follwers,like,profile views ,contact ,+follow ,+like
+
+Portfolio 
+
+General Information
+AGENCY SIGNED ?
+    No
+EXPERIENCE LEVEL
+    Experienced
+CURRENT STATE
+    Tamil Nadu
+CURRENT CITY
+    Coimbatore
+MARITAL STATUS
+    Single
+LANGUAGES KNOWN
+    English
+AVAILABLE FOR
+    Print Shoots
+PREFERRED LOCATION
+    Anywhere in India
+
+
+Physical Appearance
+HEIGHT (FEET, INCH.)
+    5 FEET 9 INCHES
+WEIGHT (KG)
+    67
+BICEPS (INCH)
+    14
+CHEST/BUST (INCH)
+    40
+WAIST (INCH)
+    31
+HIPS (INCH)
+    32
+HAIR COLOR
+    Black
+HAIR LENGTH
+    Medium
+HAIR TYPE
+    Wavy
+SKIN TONE
+    Dusky
+EYE COLOR
+    Brown
+DRESS (XS, S, M, L)
+    M
+SHOES (NO.)
+    8
+Rates & Travel
+    FULL DAY RATE
+Available On Request
+    HALF DAY RATE
+Available on request
+    HOURLY RATE
+Available on request
+PAYMENT OPTIONS
+    Bank Transfer, Cheque, Paytm, Cash
+AVAILABILITY
+    Weekends
+PASSPORT READY
+    Yes
+MAX DRIVING DISTANCE
+    300
+WILL TRAVEL? (FLY)
+    Yes
+TEST/TFP?
+    Yes
+About
+    I am experienced model
+
+Tags
+ModelModellingModellookModelstyleModelfashionFashionHappyBeautifulLoveHiremalemodelModelnearmeFashionshootModelshoot

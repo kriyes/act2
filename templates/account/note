@@ -1,0 +1,10 @@
+    {% extends 'base_layout.html' %}
+
+{% block content %}
+<div class="background-image" style="background: url({{ background.photo.url }} ) no-repeat; background-size: 100%;">
+    <div class="container">
+        <h2 class="title-text">{{ background.title }}</h2>
+        <p class="body-text">{{ background.body }}</p>
+    </div>
+</div>
+{% endblock %}

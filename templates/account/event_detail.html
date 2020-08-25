@@ -1,0 +1,473 @@
+{% extends "account/durga.html" %}
+
+{% load static %}
+
+ {% block content %}
+
+    {% comment %} {# Hero Section #}  
+Jai Maa Durga 
+    {# Main Section #} {% endcomment %}
+
+    <!--kay for talent-->
+    
+    <section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'images/bg_2.jpg' %});" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-center">
+          <div class="col-md-9 ftco-animate text-center mb-4">
+            <h1 class="mb-2 bread">{{talents_details.name_candidate}}</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Age : {{talents_details.age}} <i class="ion-ios-arrow-forward"></i></a></span> <span>Home Town :{{talents_details.home_town}} <i class="ion-ios-arrow-forward"></i></span></p>
+			<h3 class="breadcrumbs"><span class="mr-2"><a href="index.html">Current City : {{talents_details.current_city}} <i class="ion-ios-arrow-forward"></i></a></span> <span>Agency Signed :{{talents_details.agency_signed}} <i class="ion-ios-arrow-forward"></i></span></h3>
+			{% comment %} <h2>Member Since :{{talents_details.joining_date}} </h2>  {% endcomment %}
+			<h2 class="breadcrumbs"><span class="mr-2"><a href="index.html">Actor | Model / Male/30 Years: {{talents_details.actor_model}}/{{talents_details.age}}Years/{{talents_details.sex}} <i class="ion-ios-arrow-forward"></i></a></span> <span>Member Since :{{talents_details.joining_date}} <i class="ion-ios-arrow-forward"></i></span></h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+		<section class="ftco-section ftco-wrap-about">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7 d-flex">
+						<div class="img img-1 mr-md-2" style="background-image: url({{ talents_details.your_best_image1.url }});"></div>
+						<div class="img img-2 ml-md-2" style="background-image: url({{ talents_details.your_best_image2.url }});"></div>
+					</div>
+					<div class="col-md-5 wrap-about pt-5 pt-md-5 pb-md-3 ftco-animate">
+	          <div class="heading-section mb-4 my-5 my-md-0">
+	          	<span class="subheading">{{talents_details.name_candidate}}</span>
+				  <br>
+	            <h2 class="mb-4">......................{{talents_details.home_town}}</h2>
+	          </div>
+			  <br>
+	          <p>{{talents_details.about_myself}}</p>
+						<pc class="time">
+							<span>Member Since  <strong>:{{talents_details.joining_date}}</strong></span>
+							<span>Actor | Model : <a href="#">{{talents_details.actor_model}}</a></span>    
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		
+		{% comment %} <section class="ftco-section ftco-counter img ftco-no-pt" id="section-counter">
+    	<div class="container">
+		<hr><hr>
+    		<div class="row d-md-flex">
+    			<div class="col-md-9">
+    				<div class="row d-md-flex align-items-center">
+		          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18">
+		              <div class="text">
+		                <strong class="number" data-number="{{talents_details.expriance_in_year}}">0</strong>
+		                <span>Years of Experienced <strong class="number" data-number="{{talents_details.expriance_in_year}}">0</strong></span>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18">
+		              <div class="text">
+		                <strong class="number" data-number="100">Member Since May 2020</strong>
+		                <span>Project Done</span>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18">
+		              <div class="text">
+		                <strong class="number" data-number="50">Model / Female/26 Year</strong>
+		                <span>Model / Female/26 Year</span>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18">
+		              <div class="text">
+		                <strong class="number" data-number="15000">Delhi , Delh</strong>
+		                <span> Delhi , Delh</span>
+		              </div>
+		            </div>
+		          </div>
+	          </div>
+          </div>
+          <div class="col-md-3 text-center text-md-left">
+          	<p>Member Since May 2020</p>
+          </div>
+        </div>
+    	</div>
+    </section> {% endcomment %}
+
+	<section class="ftco-section">
+			<div class="container">
+				<div class="row justify-content-center mb-5 pb-2">
+          <div class="col-md-12 text-center heading-section ftco-animate">
+          	<span class="subheading">MY</span>
+            <h2 class="mb-4">............Portfolio</h2>
+			<hr>
+			<hr>
+          </div>
+        </div>	
+				<div class="row">
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff">
+							<div class="img" style="background-image: url({{ talents_details.portfolio_img1.url }});"></div>
+							<div class="text pt-4">
+								{% comment %} <h3>John Smooth</h3> {% endcomment %}
+								{% comment %} <span class="position mb-2">Restaurant Owner</span> {% endcomment %}
+								<!-- <p>A small river named Duden flows by their place and supplies</p> -->
+								<div class="faded">
+									<!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
+									<ul class="ftco-social d-flex">
+		                {% comment %} <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li> {% endcomment %}
+		              </ul>
+	              </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff">
+							<div class="img" style="background-image: url({{ talents_details.portfolio_img2.url }});"></div>
+							<div class="text pt-4">
+								{% comment %} <h3>Rebeca Welson</h3> {% endcomment %}
+								{% comment %} <span class="position mb-2">Head Chef</span> {% endcomment %}
+								<!-- <p>A small river named Duden flows by their place and supplies</p> -->
+								<div class="faded">
+									<!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
+									<ul class="ftco-social d-flex">
+		                {% comment %} <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li> {% endcomment %}
+		              </ul>
+	              </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff">
+							<div class="img" style="background-image: url({{ talents_details.portfolio_img3.url }});"></div>
+							<div class="text pt-4">
+								{% comment %} <h3>Kharl Branyt</h3> {% endcomment %}
+								{% comment %} <span class="position mb-2">Chef</span> {% endcomment %}
+								<!-- <p>A small river named Duden flows by their place and supplies</p> -->
+								<div class="faded">
+									<!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
+									<ul class="ftco-social d-flex">
+		                {% comment %} <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li> {% endcomment %}
+		              </ul>
+	              </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff">
+							<div class="img" style="background-image: url({{ talents_details.portfolio_img4.url }});"></div>
+							<div class="text pt-4">
+								{% comment %} <h3>Luke Simon</h3> {% endcomment %}
+								{% comment %} <span class="position mb-2">Chef</span> {% endcomment %}
+								<!-- <p>A small river named Duden flows by their place and supplies</p> -->
+								<div class="faded">
+									<!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
+									<ul class="ftco-social d-flex">
+		                {% comment %} <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li> {% endcomment %}
+		              </ul>
+	              </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff">
+							<div class="img" style="background-image: url({{ talents_details.portfolio_img5.url }});"></div>
+							<div class="text pt-4">
+								{% comment %} <h3>John Smooth</h3> {% endcomment %}
+								{% comment %} <span class="position mb-2">Restaurant Owner</span> {% endcomment %}
+								<!-- <p>A small river named Duden flows by their place and supplies</p> -->
+								<div class="faded">
+									<!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
+									<ul class="ftco-social d-flex">
+		                {% comment %} <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li> {% endcomment %}
+		              </ul>
+	              </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff">
+							<div class="img" style="background-image: url({{ talents_details.portfolio_img6.url }});"></div>
+							<div class="text pt-4">
+								{% comment %} <h3>Rebeca Welson</h3> {% endcomment %}
+								{% comment %} <span class="position mb-2">Head Chef</span> {% endcomment %}
+								<!-- <p>A small river named Duden flows by their place and supplies</p> -->
+								<div class="faded">
+									<!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
+									<ul class="ftco-social d-flex">
+		                {% comment %} <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li> {% endcomment %}
+		              </ul>
+	              </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff">
+							<div class="img" style="background-image: url({{ talents_details.portfolio_img7.url }});"></div>
+							<div class="text pt-4">
+								{% comment %} <h3>Kharl Branyt</h3> {% endcomment %}
+								{% comment %} <span class="position mb-2">Chef</span> {% endcomment %}
+								<!-- <p>A small river named Duden flows by their place and supplies</p> -->
+								<div class="faded">
+									<!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
+									<ul class="ftco-social d-flex">
+		                {% comment %} <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li> {% endcomment %}
+		              </ul>
+	              </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff">
+							<div class="img" style="background-image: url({{ talents_details.portfolio_img8.url }});"></div>
+							<div class="text pt-4">
+								{% comment %} <h3>Luke Simon</h3> {% endcomment %}
+								{% comment %} <span class="position mb-2">Chef</span> {% endcomment %}
+								<!-- <p>A small river named Duden flows by their place and supplies</p> -->
+								<div class="faded">
+									<!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
+									<ul class="ftco-social d-flex">
+		                {% comment %} <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li> {% endcomment %}
+		              </ul>
+	              </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--add one more div for more images-->
+		</div>
+		</section>	
+
+		
+    
+	
+
+		<section class="ftco-section bg-light">
+			<div class="container">
+				<div class="row justify-content-center mb-5 pb-2">
+          <div class="col-md-12 text-center heading-section ftco-animate">
+          	<span class="subheading">More </span>
+            <h2 class="mb-4">Information</h2>
+          </div>
+        </div>
+		<hr>
+		<hr>
+        <div class="row">
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate text-center">
+            <div class="media block-6 services d-block">
+              <div class="icon d-flex justify-content-center align-items-center">
+            		{% comment %} <span class="flaticon-cake"></span> {% endcomment %}
+              </div>
+              <div class="media-body p-2 mt-3">
+			  <hr>
+                <h3  class="heading">General Information </h3>
+				<hr>
+				<h5 class="heading">EXPERIENCE LEVEL : yes </h5>
+				<hr>
+				<h5 class="heading">EXPERIENCE LEVEL : yes </h5>
+				<hr>
+				<h5 class="heading">EXPERIENCE LEVEL : yes </h5>
+				<hr>
+				<h5 class="heading">EXPERIENCE LEVEL : yes </h5>
+				<hr>
+				<h5 class="heading">EXPERIENCE LEVEL : yes </h5>
+				
+                {% comment %} <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p> {% endcomment %}
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate text-center">
+            <div class="media block-6 services d-block">
+              <div class="icon d-flex justify-content-center align-items-center">
+            		{% comment %} <span class="flaticon-meeting"></span> {% endcomment %}
+              </div>
+              <div class="media-body p-2 mt-3">
+			  <hr>
+                <h3  class="heading">Physical Appearance </h3>
+				<hr>
+				<h5 class="heading">EXPERIENCE LEVEL : yes </h5>
+				<hr>
+				<h5 class="heading">EXPERIENCE LEVEL : yes </h5>
+				<hr>
+				<h5 class="heading">EXPERIENCE LEVEL : yes </h5>
+				<hr>
+				<h5 class="heading">EXPERIENCE LEVEL : yes </h5>
+				<hr>
+				<h5 class="heading">EXPERIENCE LEVEL : yes </h5>
+               
+              </div>
+            </div>    
+          </div>
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate text-center">
+            <div class="media block-6 services d-block">
+              <div class="icon d-flex justify-content-center align-items-center">
+            		{% comment %} <span class="flaticon-tray"></span> {% endcomment %}
+              </div>
+              <div class="media-body p-2 mt-3">
+			  <hr>
+                <h3  class="heading">Rates & Travel </h3>
+				<hr>
+				<h5 class="heading">EXPERIENCE LEVEL : yes </h5>
+				<hr>
+				<h5 class="heading">EXPERIENCE LEVEL : yes </h5>
+				<hr>
+				<h5 class="heading">EXPERIENCE LEVEL : yes </h5>
+				<hr>
+				<h5 class="heading">EXPERIENCE LEVEL : yes </h5>
+				<hr>
+				<h5 class="heading">EXPERIENCE LEVEL : yes </h5>
+                
+              </div>
+
+            </div>      
+          </div>
+		  	<hr>
+			<hr>
+        </div>
+			</div>
+		
+		</section>
+
+		
+		
+		<section class="ftco-section testimony-section img">
+			<div class="overlay"></div>
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-12 text-center heading-section ftco-animate">
+          	<span class="subheading">More </span>
+            <h2 class="mb-4"> ..........PROFILE</h2>
+          </div>
+        </div>
+        <div class="row ftco-animate justify-content-center">
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel ftco-owl">
+              <div class="item">
+                <div class="testimony-wrap text-center pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text p-3">
+                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Jason McClean</p>
+                    <span class="position">Customer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap text-center pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/person_2.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text p-3">
+                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Mark Stevenson</p>
+                    <span class="position">Customer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap text-center pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/person_3.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text p-3">
+                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Art Leonard</p>
+                    <span class="position">Customer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap text-center pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/person_4.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text p-3">
+                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Rose Henderson</p>
+                    <span class="position">Customer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap text-center pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/person_3.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text p-3">
+                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Ian Boner</p>
+                    <span class="position">Customer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+		
+    
+  
+
+
+{% endblock content %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
