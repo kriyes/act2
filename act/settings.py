@@ -11,7 +11,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'wzugilg=otpvwlofhtcplkf3lq!r9(4cl^$jc-+&@x$#b5^b2s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = ['actorsvilla.com']
 
 
@@ -126,6 +126,6 @@ STATICFILES_DIRS =[os.path.join(BASE_DIR,'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-CART_SESSION_ID = 'cart'
+# CART_SESSION_ID = 'cart'
 
 
