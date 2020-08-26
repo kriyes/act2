@@ -12,11 +12,11 @@ SECRET_KEY = 'wzugilg=otpvwlofhtcplkf3lq!r9(4cl^$jc-+&@x$#b5^b2s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-if DEBUG:
-    ALLOWED_HOSTS = ['*']
+# if DEBUG:
+#     ALLOWED_HOSTS = ['*']
 
-else:
-    ALLOWED_HOSTS = ['actorsvilla.com']
+# else:
+ALLOWED_HOSTS = ['actorsvilla.com']
 
 
 # Application definition
@@ -127,13 +127,13 @@ MEDIA_URL = '/media/'
 
 STATICFILES_DIRS =[os.path.join(BASE_DIR,'static_in_env')]
 
-if DEBUG:
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
-    MEDIA_ROOT = os.path.join(BASE_DIR, 'media_root')     # check server seetings and then commit
+# if DEBUG:
+#     STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
+#     MEDIA_ROOT = os.path.join(BASE_DIR, 'media_root')     # check server seetings and then commit
 
-else: 
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# else:
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # CART_SESSION_ID = 'cart'su durga
 
