@@ -3,7 +3,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
@@ -11,8 +10,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'wzugilg=otpvwlofhtcplkf3lq!r9(4cl^$jc-+&@x$#b5^b2s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-ALLOWED_HOSTS = ['actorsvilla.com']
+DEBUG = True
+
+if DEBUG:
+    ALLOWED_HOSTS = ['*']
+
+else:
+    ALLOWED_HOSTS = ['actorsvilla.com']
 
 
 # Application definition
@@ -73,7 +77,7 @@ else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'durga2',
+            'NAME': 'durga',
             'USER': 'durga',
             'PASSWORD': 'durga98765durga@@@',
             'HOST': 'localhost',
@@ -123,9 +127,15 @@ MEDIA_URL = '/media/'
 
 STATICFILES_DIRS =[os.path.join(BASE_DIR,'static_in_env')]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+if DEBUG:
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media_root')
 
-# CART_SESSION_ID = 'cart'
+else:
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+# CART_SESSION_ID = 'cart'su durga
 
 

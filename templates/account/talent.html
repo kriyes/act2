@@ -1,6 +1,5 @@
 {% extends 'account/durga.html' %}
 {% load static %}
-
 {% block content %}
 
    <section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'images/bg_2.jpg' %});" data-stellar-background-ratio="0.5">
@@ -34,7 +33,7 @@
                 </div>
                 
                 <p class="clearfix">
-                  <a href=" {% url 'talentdetailview' pk=talent.pk %} " class="float-left read">Know more about me</a>
+                  <a href="{% url 'talentdetailview' pk=talent.pk %}" class="float-left read">Know more about me</a>
                   <a href="{% url 'talentdetailview' pk=talent.pk %}" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
                 </p>
                    
@@ -44,9 +43,7 @@
           {% endfor %}
         </div>
       </div>
-             
-
-    </section>         
+    </section>
 
 
 
