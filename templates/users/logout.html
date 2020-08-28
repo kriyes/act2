@@ -1,0 +1,73 @@
+{% extends 'account/durga.html' %}
+{% load static %}
+
+{% block content %}
+
+    <section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'images/bg_3.jpg' %});" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-center">
+          <div class="col-md-9 ftco-animate text-center mb-4">
+            <h1 class="mb-2 bread">Logout</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.html"> <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="blog.html"><i class="ion-ios-arrow-forward"></i></a></span> <span><i class="ion-ios-arrow-forward"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="ftco-section">
+			<div class="container">
+				<div class="row">
+                      <div class="col-lg-8 ftco-animate">
+                            <div class="comment-form-wrap pt-5">
+                                {% csrf_token %}
+<!--                                {{ form.as_table }}-->
+<!--                                {{ form.as_p}}-->
+                                    <div class="comment-form-wrap pt-5">
+                                    <h3 class="mb-5 h4 font-weight-bold p-4 bg-light" style="text-align:center">Join Now</h3>
+                                    <form action="#" class="p-4 p-md-5 bg-light">
+
+                                      <div class="form-group">
+                                        <label for="name">Name *</label>
+                                        <input type="text" class="form-control" id="name">
+                                      </div>
+
+                                      <div class="form-group">
+                                        <label for="email">Email *</label>
+                                        <input type="email" class="form-control" id="email">
+                                      </div>
+
+                                      <div class="form-group">
+                                        <label for="website">Website</label>
+                                        <input type="url" class="form-control" id="website">
+                                      </div>
+
+                                        <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="submit" value="Post Comment" class="btn py-3 px-4 btn-primary">
+                                      </div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+
+                                </form>
+                              </div>
+                        </div>
+                </div>
+            </div>
+
+		</section>
+
+
+
+
+
+
+
+{% endblock content %}
+
+
